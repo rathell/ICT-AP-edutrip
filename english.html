@@ -43,7 +43,7 @@
     .title {
       text-align: center;
       font-size: 36px;
-      color: rgb(201, 89, 111);
+      color: rgb(146, 70, 85);
       margin-top: 10px;
     }
 
@@ -51,10 +51,10 @@
       width: 80%;
       max-width: 600px;
       margin: 30px auto;
-      text-align: justify;
+      text-align: center;
       font-size: 17px;
-      color: black;
-      background: rgba(255, 255, 255, 0.6);
+      color: rgb(255, 205, 223);
+      background: rgba(113, 79, 51, 0.87);
       padding: 15px;
       border-radius: 10px;
     }
@@ -68,16 +68,42 @@
       max-width: 90%;
     }
 
-    .image-row img {
-      max-width: 100%;
-      height: auto;
-      width: 450px;
+    .first-img {
+      position: absolute;
+      top: 200px;
+      left: -30px;
+      width: 1500px;
       border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      z-index: 2;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0);
       transition: transform 0.3s ease;
     }
 
-    .image-row img:hover {
+    .second-img {
+      position: absolute;
+      top: 900px;
+      left: 1260px;
+      width: 100px;
+      border-radius: 10px;
+      z-index: 2;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0);
+      transition: transform 0.3s ease;
+    }
+
+    .third-img {
+      position: absolute;
+      top: 730px;
+      left: -30px;
+      width: 270px;
+      border-radius: 10px;
+      z-index: 2;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0);
+      transition: transform 0.3s ease;
+    }
+
+    .first-img:hover,
+    .second-img:hover,
+    .third-img:hover {
       transform: scale(1.05);
     }
   </style>
@@ -95,20 +121,19 @@
     <a href="pkn.html">Pendidikan Pancasila</a>
   </header>
 
-  <div class="title-symbol">‧₊ ᵎᵎ 🍒 ⋅ ˚✮</div>
-  <h2 class="title">Mandarin AP</h2>
+  <div class="title-symbol">♡₊˚ 🍫・₊✧</div>
+  <h2 class="title">English Mindmap</h2>
 
   <div class="content">
     <p>
-      Our trip to Jogja and Solo was a memorable experience filled with learning and cultural exploration.
-      We visited historical landmarks, experienced local traditions, and deepened our understanding of
-      Indonesian heritage. This summary reflects on the key moments and lessons from our journey.
+      Upload your mindmap here and submit the assignment.
     </p>
   </div>
 
   <div class="image-row">
-    <img src="4 sets of yes king.png" alt="first image" />
-    <img src="it would be all over.png" alt="second image" />
+    <img src="lirila larila.png" alt="second image" class="first-img" />
+    <img src="cappucino assasino.gif" alt="second image" class="second-img" />
+    <img src="trippi troppo.gif" class="third-img" />
   </div>
 
 </body>
